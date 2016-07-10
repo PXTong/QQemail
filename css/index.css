@@ -1,0 +1,275 @@
+@charset 'utf-8';
+td,
+input,
+button,
+select,
+body {
+  font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+  font-size: 12px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+ul,
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+a:hover {
+  color: #b2dfff;
+  cursor: pointer;
+}
+a {
+  font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+}
+body {
+  width: 1345px;
+  overflow: hidden;
+}
+header {
+  width: 1349px;
+  height: 66px;
+  background-image: url(../img/top_data.jpg);
+}
+header a {
+  color: #b2dfff;
+}
+header .lgoo {
+  float: left;
+  width: 445px;
+  height: 60px;
+  position: absolute;
+  left: 5px;
+}
+header .lgoo .one {
+  width: 215px;
+  height: 60px;
+  display: block;
+  float: left;
+}
+header .lgoo .switch {
+  float: left;
+  width: 230px;
+  height: 37px;
+  margin-top: 13px;
+  line-height: 18px;
+  color: #b2dfff;
+}
+header .lgoo .switch b {
+  font-weight: bold;
+}
+header .lgoo .switch .addrtitle {
+  color: #8fa1af;
+}
+header .topbg {
+  float: right;
+  width: 745px;
+  height: 66px;
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../img/top_bg1.jpg);
+}
+header .topbg .r {
+  color: #8fa1af;
+}
+header .topbg .r .right {
+  float: right;
+  position: absolute;
+  right: 10px;
+}
+header .topbg .r .right a {
+  color: #97cbec;
+}
+header .topbg .r .search {
+  width: 286px;
+  height: 28px;
+  position: absolute;
+  top: 37px;
+  right: 0px;
+}
+header .topbg .r .search .smallsearch {
+  display: block;
+  background-color: red;
+  position: relative;
+  border: 1px solid #BBB;
+  background: #FFF;
+  padding: 1px 21px;
+  height: 22px;
+  line-height: 18px;
+  margin: 3px 5px 3px 2px;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #E6E6E6 inset;
+}
+header .topbg .r .search .smallsearch input {
+  width: 235px;
+  height: 18px;
+  border: none;
+  font-size: 12px;
+}
+header .topbg .r .search .smallsearch .icon_search {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/smartsearch.png) -3px -3px no-repeat;
+}
+.topline {
+  width: 1366px;
+  height: 11px;
+}
+.topline .toplineimg {
+  width: 197px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: right;
+  float: left;
+  background-image: url(../img/topline.gif);
+}
+.fdbody {
+  width: 192px;
+  background: url(../img/left_bottom.gif) 0 54px #5b7e9a;
+  position: absolute;
+  top: 77px;
+  bottom: 0;
+}
+.newskinbody {
+  width: 192px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 77px;
+  bottom: 0;
+  border-left: 0 none;
+  background: url(../img/left_normal.gif) no-repeat;
+  padding-left: 8px;
+}
+.newskinbody .navBar {
+  width: 192px;
+  height: 107px;
+}
+.newskinbody .navBar .navbar {
+  width: 179px;
+  height: 107px;
+}
+.newskinbody .navBar .navbar a {
+  line-height: 24px;
+  padding-left: 41px;
+  color: #013271;
+  font-weight: bold;
+  font-size: 14px;
+  width: 158px;
+  height: 24px;
+  display: block;
+}
+.newskinbody .navBar .navbar a:hover {
+  text-decoration: none;
+}
+.newskinbody .navBar .navbar input {
+  float: left;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  margin: -20px 0px 0 12px;
+}
+.newskinbody .navBar .navbar li {
+  width: 158px;
+  height: 24px;
+}
+.newskinbody .navBar .navbar .composepart {
+  margin: 0 10px 0 11px;
+  padding: 2px 0 0 0;
+}
+.newskinbody .navBar .navbar .checkpart,
+.newskinbody .navBar .navbar .addrpart {
+  margin: 8px 10px 0 11px;
+  padding: 0 2px 0 0px;
+}
+.newskinbody .navBar .navbar .composebtn {
+  background: url(../img/mail.png) 0 -1px no-repeat;
+}
+.newskinbody .navBar .navbar .checkbtn {
+  background: url(../img/mail.png) 0 -33px no-repeat;
+}
+.newskinbody .navBar .navbar .addrbtn {
+  background: url(../img/mail.png) 0 -63px no-repeat;
+}
+.newskinbody .navMinBar {
+  margin: 0 13px 0 0px;
+  bottom: 8px;
+  position: absolute;
+  top: 107px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: auto;
+  width: 184px;
+}
+.newskinbody .navMinBar .OutFolder a {
+  color: #fff;
+  font-size: 12px;
+}
+.newskinbody .navMinBar .OutFolder a:hover {
+  text-decoration: none;
+}
+.newskinbody .navMinBar .OutFolder .SysFolderList {
+  margin: 2px 5px 5px 20px;
+  border-top: 1px solid #5b3923;
+  height: 0px;
+  width: 163px;
+}
+.newskinbody .navMinBar .OutFolder .SysFolderList .fdul li {
+  height: 22px;
+  line-height: 22px;
+  padding: 0 2px 0 13px;
+  margin: 0 5px 3px;
+}
+.newskinbody .navMinBar .OutFolder .SysFolderList .fdul li a {
+  color: #ffe7ce;
+  display: inline-block;
+  height: 22px;
+  line-height: 20px;
+  padding-left: 13px;
+  outline: none;
+}
+.newskinbody .navMinBar .OutFolder .SysFolderList .fdul li .qk {
+  display: inline;
+  color: #dfbaa4;
+  margin-right: 2px;
+  text-align: right;
+  float: right;
+}
+.newskinbody .navMinBar .ScollFolder a {
+  color: #ffe7cb;
+}
+.newskinbody .navMinBar .ScollFolder #popfoldersDiv {
+  width: 173px;
+  height: 22px;
+}
+.newskinbody .navMinBar .ScollFolder #popfoldersDiv .fdul li img {
+  visibility: hidden;
+  font-size: 0;
+  background: url(../img/mail.png) no-repeat -127px -27px;
+}
+.newskinbody .navMinBar .ScollFolder .fdul input {
+  border: none;
+  background: url(../img/mail.png) -32px -190px no-repeat;
+  vertical-align: middle;
+  width: 12px;
+  height: 14px;
+  margin: -4px 0 0 5px;
+}

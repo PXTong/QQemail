@@ -1,0 +1,14 @@
+@charset 'utf-8';
+*{margin: 0;padding: 0;}
+td, input, button, select, body,a {
+    font-family: "lucida Grande",Verdana,"Microsoft YaHei" !import;
+    font-size: 12px;
+}
+.mail i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/mail.png) -48px -16px no-repeat;
+	margin: 0 6px 1px 0;
+	
+}

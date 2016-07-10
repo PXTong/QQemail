@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>QQ邮箱</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/angular-ui-router.min.js"></script>
+	<script src="js/app.js"></script>
+	<!-- <script src="./js/jquery-1.10.2.min.js"></script> -->
+	<!-- <script src="./js/bootstrap.min.js"></script> -->
+</head>
+<body>
+	<header>
+		<div class="lgoo">
+			<a href="" class="one">
+				<img src="./img/logo.gif">
+			</a>
+			<div class="switch">
+				<b>Tong</b>
+				<span class="pointer">
+					<
+					<span class="useraddr">976988096@qq.com</span>
+					>
+				</span>
+				<br/>
+				<span class="addrtitle">
+					<a href="">邮箱首页</a>
+					|
+					<a href="">设置</a>
+					-
+					<a href="">换肤</a>
+				</span>
+			</div>
+		</div>
+		<div class="topbg">
+			<div class="r">
+				<div class="right">
+					<span>|</span>
+					<a href="">反馈建议</a>
+					<span>|</span>
+					<a href="">帮助中心</a>
+					<span>|</span>
+					<a href="">退出</a>
+				</div>
+				<div class="search">
+					<div class="smallsearch">
+						<input type="text" placeholder="" value="邮件搜索...">
+						<span class="icon_search"></span>
+						<span class="icon_arrowdown"></span>
+					</div>
+					
+				</div>
+			</div>			
+		</div>
+		<div class="clearfix"></div>
+	</header>
+	<div class="topline">
+		<div class="toplineimg"></div>
+	</div>
+	<div class="fdbody"></div>
+	<div class="newskinbody">
+		<div class="navBar">
+			<ul class="navbar">
+				<li class="composepart">
+					<a ui-sref="compose">写信</a>
+					<input type="button" class="composebtn">
+				</li>
+				<li class="checkpart">
+					<a ui-sref="check">收信</a>
+					<input type="button" class="checkbtn">
+				</li>
+				<li class="addrpart">
+					<a ui-sref="addr">通讯录</a>
+					<input type="button" class="addrbtn">
+				</li>
+			</ul>
+		</div>
+		<div class="navMinBar">
+			<div class="OutFolder">
+				<div class="SysFolderList" style="height: 189px;margin-left: 0px">
+					<ul class="fdul">
+						<li>
+							<a href="">
+								收件箱
+							</a>
+						</li>
+						<li>
+							<a href="">
+								星标邮件
+							</a>
+						</li>
+						<li>
+							<a href="">
+								群邮件
+							</a>
+						</li>
+						<li>
+							<a href="">
+								草稿箱
+							</a>
+						</li>
+						<li>
+							<a href="">
+								已发送
+							</a>
+						</li>
+						<li>
+							<a href="">
+								已删除
+							</a>
+							<a class="qk">
+								[清空]
+							</a>
+						</li>
+						<li>
+							<a >
+								<b>垃圾箱</b>
+							</a>
+							<a class="qk">
+								[清空]
+							</a>
+						</li>
+						<li>
+							<a href="">
+								QQ邮件订阅
+							</a>
+						</li>
+						
+					</ul>
+					<div class="sepline"></div>
+				</div>
+				<!-- <div class="clearfix"></div> -->
+				<div class="ScollFolder" style="height: 315px;overflow: auto">
+					<div style="height: 3px;overflow: hidden;"></div>
+					<div id="showtopDiv">
+						<ul id="mytopfolders"></ul>
+						<ul id="poptopfolders"></ul>
+						<ul id="tagtopfolders"></ul>
+					</div>
+					<div id="personalfoldersDiv">
+						<ul id="personalfolders" style="display: none;overflow: hidden;"></ul>
+					</div>
+
+					<div id="popfoldersDiv">
+						<ul class="fdul">
+							<li class="fs" style="*margin-bottom:-2px">
+								<a>
+									其他邮箱
+								</a>
+								<img src="" class="fd_on">
+							</li>
+						</ul>
+						<ul style="display: none;overflow: hidden;"></ul>
+					</div>
+					<div id="tagfoldersDiv">
+						<ul id="tagfolders" style="display: none;overflow: hidden;"></ul>
+					</div>
+					<div class="sepline" style="margin-top: 4px;"></div>
+					<div class="sepline_height" style="height: 4px;"></div>
+					<ul class="fdul">
+						<li class="fs">
+							<a>
+								漂流瓶
+								<input class="icon_input" style="button">
+							</a>
+						</li>
+						<li class="fs fs_sep" style="margin-left: 6px">
+							<span>
+								<a href="">
+									贺卡
+								</a>
+							</span>
+							<a style="cursor: default;text-decoration: none;float: none;padding: 0px;margin: 0px 3px;">|</a>
+							<span>
+								<a href="">
+									明信片
+								</a>
+							</span>	
+						</li>
+						<li class="fs fs_sep" style="margin-left: 6px">
+							<span>
+								<a href="">
+									日历
+								</a>
+							</span>
+							<a style="cursor: default;text-decoration: none;float: none;padding: 0px;margin: 0px 3px;">|</a>
+							<span>
+								<a href="">
+									记事本
+								</a>
+							</span>	
+						</li>
+						<li class="fs">
+							<a href="">附件收藏</a>
+						</li>
+						<li class="fs">
+							<a href="">文件中转站</a>
+						</li>
+						<li class="fs">
+							<a href="">简历</a>
+						</li>
+						<li class="fs">
+							<a href="">阅读空间</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="margin-left: 185px;margin-top: -11px;border-top: 1px solid #000;">
+		<div ui-view>
+			
+		</div>
+	</div>
+</body>
+</html>

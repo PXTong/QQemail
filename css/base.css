@@ -1,0 +1,36 @@
+@charset "utf-8";
+.fs{
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+	padding: 0 2px 0 13px;
+	margin:0 5px 1px 3px;
+
+}
+.fs_sep{
+	white-space: nowrap;
+	padding-left: 9px;
+}
+li.fs a{
+	color: #ffe7cb;
+	display: inline-block;
+	height: 22px;
+	overflow: hidden;
+	padding-left: 13px;
+	text-decoration: none;
+}
+.fd_on{
+	float: left;
+	margin: -21px 0 0 1px;
+	width: 13px;
+	height: 14px;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.sepline{
+		margin:2px 5px 5px 20px;
+		border-top:1px solid #5b3923;
+		height: 0px;
+		width: 163px;  
+}
